@@ -9,7 +9,7 @@
 <script setup>
 import TitlePoem from '@/components/TitlePoem.vue'
 import AuthorPoem from '@/components/AuthorPoem.vue'
-import { invictusPoem } from '@/poems/Invictus.js'
+import { invictusPoem } from '@/poems/invictus.js'
 import PoemComponent from '@/components/PoemComponent.vue'
 </script>
 
@@ -21,5 +21,14 @@ import PoemComponent from '@/components/PoemComponent.vue'
   align-items: flex-end;
   width: 600px;
   padding-top: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .header-container {
+    width: 100%;
+    max-width: 600px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 </style>
