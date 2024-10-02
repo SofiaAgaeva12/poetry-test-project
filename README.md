@@ -1,35 +1,54 @@
-# poetry
+# Poem Visibility Control
 
-This template should help get you started developing with Vue 3 in Vite.
+Это проект на Vue 3, который предоставляет интерфейс для управления видимостью четверостиший в стихе на странице приложения. Пользователь может включать или отключать видимость каждого четверостишия через элементы управления.
 
-## Recommended IDE Setup
+## Установка
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+1. Убедитесь, что у вас установлен [Node.js](https://nodejs.org/).
+2. Клонируйте репозиторий и перейдите в него:
 
-## Customize configuration
+   ```bash
+   git clone https://github.com/SofiaAgaeva12/poetry-test-project
+   cd poetry-test-project
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-## Project Setup
+## Установите зависимости
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### Чтобы запустить приложение в режиме разработки, выполните
 
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+### Чтобы собрать проект для Production, выполните
 
 ```sh
 npm run build
 ```
+
+[//]: # (Это создаст оптимизированную версию приложения в каталоге dist)
 
 ### Lint with [ESLint](https://eslint.org/)
 
 ```sh
 npm run lint
 ```
+## Customize configuration
+
+See [Vite Configuration Reference](https://vitejs.dev/config/).
+
+### Структура проекта
+src/components/: Каталог с компонентами Vue, включая QuatrainComponent.vue и ControlElement.vue.
+src/App.vue: Главный компонент приложения.
+src/main.js: Точка входа в приложение.
+### Как это работает
+Каждый элемент управления (ControlElement) соответствует одному четверостишию (QuatrainComponent).
+Нажатие на элемент управления включает или отключает видимость четверостишия, занимая место нижестоящим текстом.
+Приложение гарантирует, что хотя бы одно четверостишие всегда остается видимым.
+### Как внести изменения
+Создайте или откройте компонент, который нужно изменить, в каталоге src/components/.
+Внесите необходимые изменения.
